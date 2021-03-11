@@ -4,7 +4,7 @@
 <form action="/answers" method="POST">
   {% for choice in questions[num].choices %}
   <label for="{{choice}}">{{choice}}</label>
-  <input type="radio" id="{{choice}}" value="{{choice}}" name="choice_val" />
+  <input type="radio" value="{{choice}}" name="choice_val" />
   {% endfor %}
   <button type="submit">Submit</button>
 </form>
